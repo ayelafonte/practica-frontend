@@ -1,0 +1,18 @@
+{
+    "anuncios":[
+        {
+            "nombre": "Guitarra",
+            "venta": false,
+            "precio": 150,
+            "foto": "guitarra.jpg",
+            "tags": ["lifestyle", "work"]
+        },
+        {
+            "nombre": "Patinete",
+            "venta": true,
+            "precio": 200,
+            "foto": "./images/patinete.jpg",
+            "tags": ["motor", "lifestyle"]
+        }
+    ]
+}

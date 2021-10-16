@@ -1,5 +1,5 @@
-import LoginController from "./controladores/ControladorLogin"
-import MessageController from "./controladores/ControladorMensajeError"
+import LoginController from "./controladores/ControladorLogin.js"
+import MessageController from "./controladores/ControladorMensajeError.js"
 
 window.addEventListener('DOMContentLoaded', function(){
 

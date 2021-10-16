@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate en NodePop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crea tu cuenta en NodePop</h1>
+    <div class="mensaje-error"></div>
+    <form novalidate>
+        <div>
+            <input type="text" name="username" placeholder="Escribe aquí tu usuario" required autofocus>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Escribe aquí tu contraseña" required>
+        </div>
+        <div>
+            <input type="password" name="passwordConfirmation" placeholder="Confirma tu contraseña" required>
+        </div>
+        <div>
+            <button type="submit" disabled>Crear cuenta</button>
+        </div>
+    </form>
+    <script type="module" src="js/signup.js"></script>
+</body>
+</html>
