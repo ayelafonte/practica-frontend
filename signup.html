@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>Crea tu cuenta en NodePop</h1>
-    <div class="mensaje-error"></div>
-    <form novalidate>
+    <div class="message"></div> <!--MessageController-->
+    <form novalidate> <!--SignupController-->
         <div>
             <input type="text" name="username" placeholder="Escribe aquí tu usuario" required autofocus>
         </div>
@@ -22,6 +22,10 @@
         </div>
         <div>
             <button type="submit" disabled>Crear cuenta</button>
+        </div>
+        <div class="loader"></div> <!---LoaderController-->
+        <div>
+            <a class="asking" href="login.html"> Si ya estas registrado, inicia sesión aquí</a>
         </div>
     </form>
     <script type="module" src="js/signup.js"></script>

@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>Inicia sesión en NodePop</h1>
-    <div class="mensaje-error"></div>
-    <form novalidate>
+    <div class="message"></div> <!--MessageController-->
+    <form novalidate> <!--LoginController-->
         <div>
             <input type="text" name="username" placeholder="Escribe aquí tu usuario" required autofocus>
         </div>
@@ -19,6 +19,10 @@
         </div>
         <div>
             <button type="submit">Iniciar Sesión</button>
+        </div>
+        <div class="loader"></div> <!---LoaderController-->
+        <div>
+            <a class="asking" href="signup.html">¿Quieres registrarte? Hazlo aquí</a>
         </div>
     </form>
     <script type="module" src="js/login.js"></script>
