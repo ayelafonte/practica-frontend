@@ -1,0 +1,53 @@
+{
+    "users":[],
+    "anuncios":[
+        {
+            "id": 1,
+            "name": "Guitarra",
+            "type": "Compra",
+            "price": 150,
+            "photo": "guitarra.jpg",
+            "tags": ["lifestyle", "work"]
+        },
+        {
+            "id": 2,
+            "name": "Patinete eléctrico",
+            "type": "Compra",
+            "price": 200,
+            "photo": "patinete.jpg",
+            "tags": ["motor", "lifestyle"]
+        },
+        {
+            "id": 3,
+            "name": "Silla de escritorio",
+            "type": "Venta",
+            "price": 100,
+            "photo": "./images/patinete.jpg",
+            "tags": ["work", "home"]
+        },
+        {
+            "id": 4,
+            "name": "Cinta de correr",
+            "type": "Venta",
+            "price": 350,
+            "photo": "./images/patinete.jpg",
+            "tags": ["fitness", "lifestyle"]
+        },
+        {
+            "id": 5,
+            "name": "Nintendo Switch",
+            "type": "Venta",
+            "price": 210,
+            "photo": "./images/patinete.jpg",
+            "tags": ["game", "lifestyle"]
+        },
+        {
+            "id": 6,
+            "name": "Sofá",
+            "type": "Venta",
+            "price": 450,
+            "photo": "./images/patinete.jpg",
+            "tags": ["home", "lifestyle"]
+        }
+    ]
+}
