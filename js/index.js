@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Controlador de la lista de anuncios
     const adsListDiv = document.querySelector('.ads-list') // Selecciona el elemento del DOM (HTML) donde quiero cargar los anuncios
-    const adsListController = new AdsListController(tweetListDiv, errorMessageController) // Instancia controlador pasándole el elemento del DOM donde cargar los anuncios
+    const adsListController = new AdsListController(adsListDiv) // Instancia controlador pasándole el elemento del DOM donde cargar los anuncios
     adsListController.renderAds() // Renderiza los anuncios
 
     // Controlador del buscador
