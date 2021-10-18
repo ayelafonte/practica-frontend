@@ -1,12 +1,12 @@
 {
     "users":[],
-    "anuncios":[
+    "ads":[
         {
             "id": 1,
             "name": "Guitarra",
             "type": "Compra",
             "price": 150,
-            "photo": "guitarra.jpg",
+            "photo": "imagenes/guitarra.jpg",
             "tags": ["lifestyle", "work"]
         },
         {
@@ -14,7 +14,7 @@
             "name": "Patinete eléctrico",
             "type": "Compra",
             "price": 200,
-            "photo": "patinete.jpg",
+            "photo": "imagenes/patinete-electrico.jpg",
             "tags": ["motor", "lifestyle"]
         },
         {
@@ -22,7 +22,7 @@
             "name": "Silla de escritorio",
             "type": "Venta",
             "price": 100,
-            "photo": "./images/patinete.jpg",
+            "photo": "imagenes/silla-escritorio.jpg",
             "tags": ["work", "home"]
         },
         {
@@ -30,7 +30,7 @@
             "name": "Cinta de correr",
             "type": "Venta",
             "price": 350,
-            "photo": "./images/patinete.jpg",
+            "photo": "imagenes/cinta-correr.jpg",
             "tags": ["fitness", "lifestyle"]
         },
         {
@@ -38,7 +38,7 @@
             "name": "Nintendo Switch",
             "type": "Venta",
             "price": 210,
-            "photo": "./images/patinete.jpg",
+            "photo": "imagenes/nintendo-switch.jpg",
             "tags": ["game", "lifestyle"]
         },
         {
@@ -46,7 +46,7 @@
             "name": "Sofá",
             "type": "Venta",
             "price": 450,
-            "photo": "./images/patinete.jpg",
+            "photo": "imagenes/sofa.jpg",
             "tags": ["home", "lifestyle"]
         }
     ]
