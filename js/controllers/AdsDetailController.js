@@ -30,7 +30,7 @@ export default class AdDetailController {
         // El botón solo se muestra si el usuario es el que creó el anuncio 
         if (button) {
             button.addEventListener('click', async () => {
-                const answer = confirm('Esás seguro de borrar el anuncio?')
+                const answer = confirm('¿Estás seguro de borrar el anuncio?')
                 if (answer === true) {
                     PubSub.publish(PubSub.events.SHOW_LOADING) 
                     button.setAttribute('disabled', 'disabled') // Desactiva el botón después de hacer click

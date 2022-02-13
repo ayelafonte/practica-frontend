@@ -1,5 +1,5 @@
-import PubSub from "../services/PubSub.js"
 import { loaderView } from "../views.js"
+import PubSub from "../services/PubSub.js"
 
 export default class LoaderController {
 
@@ -17,10 +17,10 @@ export default class LoaderController {
     }
 
     hideLoader() {
-        this.element.style.display = "none" 
+        this.element.style.display = 'none' 
     }
 
     showLoader() {
-        this.element.style.display = "initial" 
+        this.element.style.display = 'initial' 
     }
 }

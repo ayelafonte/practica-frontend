@@ -1,7 +1,7 @@
 import PubSub from "../services/PubSub.js"
 import DataServices from "../services/DataServices.js"
 
-export default class AdsFormController{
+export default class AdFormController{
 
     constructor(element) {
         this. element = element // formulario HTML
@@ -25,7 +25,7 @@ export default class AdsFormController{
                     // Conectar con el servidor y pasarle los datos:
                     const result = await DataServices.createAd(name, type, photo, price, tags);
                     // Se ha creado el anuncio con éxito
-                    PubSub.publish(PubSub.events.SHOW_SUCCESS, 'Se ha creado el anuncio con éxito')
+                    PubSub.publish(PubSub.events.SHOW_SUCCESS, 'Se ha creado el anuncio correctamente')
                 } catch (error) {
                     PubSub.publish(PubSub.events.SHOW_ERROR, error) // Si hay un error lo publica
                 } finally {

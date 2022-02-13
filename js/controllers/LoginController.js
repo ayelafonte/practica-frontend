@@ -16,14 +16,14 @@ export default class LoginController {
             if (this.element.checkValidity()) {
                 // Login
                 const data = new FormData(this.element) // Formulario con los datos
-                const username = data.get('username')  // Valor del input[name="username"]
-                const password = data.get('password')  // Valor del input[name="password"]
+                const username = data.get('Usuario')  // Valor del input[name="username"]
+                const password = data.get('Contraseña')  // Valor del input[name="password"]
                 const url = new URLSearchParams(window.location.search) // url con parámetro 'next' redirige a otra página luego del login
                 const next = url.get('next') || '/'
                 try {
                     PubSub.publish(PubSub.events.SHOW_LOADING) // Muestra loader
                     const result = await DataService.login(username, password)
-                    PubSub.publish(PubSub.events.SHOW_SUCCESS, `Bienvenido ${username}`)
+                    PubSub.publish(PubSub.events.SHOW_SUCCESS, `Bienvenido ${username} a NodePop`)
                     location.href = next  // Se redirige al usuario al home
                 } catch (error) {
                     PubSub.publish(PubSub.events.SHOW_ERROR, error)

@@ -47,7 +47,7 @@ export function loaderView() {
 export function warningView(message) {
     return `<div class='warning'> 
     ${message}
-    <button>x</button>
+    <button>X</button>
 </div>`
 }
 
