@@ -23,9 +23,9 @@ El frontEnd consta de las siguientes páginas:
 
 # Limitaciones
 
-La barra de búsqueda no es funcional por lo tanto tampoco es posible filtrar anuncios
-No es posible subir imágenes al crear un nuevo anuncio
-Algo falla al al intentar ver el detalle de los anuncios, no fui capaz de solucionar eso aún
+- La barra de búsqueda no es funcional por lo tanto tampoco es posible filtrar anuncios.
+- No es posible subir imágenes al crear un nuevo anuncio.
+- Algo falla al al intentar ver el detalle de los anuncios, no fui capaz de solucionar eso aún.
 
 
 
