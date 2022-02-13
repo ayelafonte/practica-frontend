@@ -5,9 +5,9 @@ export default class LoaderController {
 
     constructor(element) {
         this.element = element
-        this.element.innerHTML = loaderView()  // Obtiene la estructura html del loader
+        this.element.innerHTML = loaderView()  
 
-        // Suscribe a los eventos y actúa segun corresponda
+        
         PubSub.subscribe(PubSub.events.SHOW_LOADING, () => {
             this.showLoader()
         })

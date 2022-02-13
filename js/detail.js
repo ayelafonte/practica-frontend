@@ -6,18 +6,18 @@ import LoginController from "./controllers/LoginController.js"
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    // Controlador de mensajes
+    
     const messagesDiv = document.querySelector('.messages')
     new MessageController(messagesDiv)
 
-    // Contralador del loader
+    
     const loaderDiv = document.querySelector('.loader')
     new LoaderController(loaderDiv)
 
-    // Se obtiene el ID del anuncio de la URL
+    
     const id = new URLSearchParams(window.location.search).get('id')
     
-    // Controlador del detalle del anuncio
+    
     const adDiv = document.querySelector('.ad')
     new AdsDetailController(adDiv, id)
 

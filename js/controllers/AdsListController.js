@@ -5,21 +5,21 @@ import PubSub from '../services/PubSub.js'
 export default class AdsListController {
 
     constructor(element, messageController) {
-        this.element = element //element class = ads-list
+        this.element = element 
         this.messageController = messageController
 
     }
 
     async renderAds() {
-        PubSub.publish(PubSub.events.SHOW_LOADING) // Muestra el loader
+        PubSub.publish(PubSub.events.SHOW_LOADING) 
         try {
-            // Obtiene los datos
+            
             const ads = await DataServices.getAds()
-            // Si no hay anuncios para mostrar
+            
             if (ads.length === 0) {
                 PubSub.publish(PubSub.events.SHOW_ALERT, 'No hay anuncios para mostrar') 
             } else {
-                // Muestra cada anuncio en una lista
+                
                 for (const ad of ads) {
                     const adElement = document.createElement('li')
                     adElement.innerHTML = adView(ad)

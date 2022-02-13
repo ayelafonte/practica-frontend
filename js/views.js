@@ -73,9 +73,8 @@ export function adDetailView(ad) {
             </div>
             <br>
             <div class="ad-detail-text-container">
-                <p class="price"> Price: ${ad.price}€ </p>
-                <p class="name"> Description: ${ad.name}</p>
-                <p class="type"> What's it for?: ${ad.type} </p>
+                <p class="price"> Precio: ${ad.price}€ </p>
+                <p class="name"> Descripción: ${ad.name}</p>
                 <p class="tags"> Tags: ${ad.tags} </p>
             </div>
             <br>

@@ -5,16 +5,16 @@ export default class MessageController {
 
     constructor(element) {
         this.element = element
-        // Suscribimos el controlador a los eventos que nos interesan
+        
         PubSub.subscribe(PubSub.events.SHOW_ERROR, error => {
             this.showError(error)
         })
-        // Muestra mensajes de error
+        
         PubSub.subscribe(PubSub.events.SHOW_SUCCESS, message => {
             this.showSuccess(message)
         })
     }
-    // Oculta el mensaje al hacer click en cancelar
+    
     attachCloseMessageEventListener() {
         const button = this.element.querySelector('button')
         button.addEventListener('click', () => {

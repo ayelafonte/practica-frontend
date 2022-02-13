@@ -4,7 +4,7 @@ import DataServices from "../services/DataServices.js"
 export default class AdFormController{
 
     constructor(element) {
-        this. element = element // formulario HTML
+        this. element = element 
         this.attachEventListener()
     }
 
@@ -14,7 +14,7 @@ export default class AdFormController{
             PubSub.publish(PubSub.events.SHOW_LOADING)
 
             if (this.element.checkValidity()) {
-                const data = new FormData(this.element) // Obtener formulario con datos
+                const data = new FormData(this.element) 
                 const name = data.get('name')
                 const type = data.get('type')
                 const price = Number(data.get('price'))
@@ -22,12 +22,12 @@ export default class AdFormController{
                 const tags = data.getAll('tags')
 
                 try {
-                    // Conectar con el servidor y pasarle los datos:
+                    
                     const result = await DataServices.createAd(name, type, price, photo, tags);
-                    // Se ha creado el anuncio con éxito
+                    
                     PubSub.publish(PubSub.events.SHOW_SUCCESS, 'Se ha creado el anuncio correctamente')
                 } catch (error) {
-                    PubSub.publish(PubSub.events.SHOW_ERROR, error) // Si hay un error lo publica
+                    PubSub.publish(PubSub.events.SHOW_ERROR, error) 
                 } finally {
                     PubSub.publish(PubSub.events.HIDE_LOADING)
                 }
