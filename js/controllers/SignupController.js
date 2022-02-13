@@ -1,4 +1,4 @@
-import DataService from "../services/DataService.js"
+import DataService from "../services/DataServices.js"
 import PubSub from "../services/PubSub.js"
 
 export default class SignupController {
@@ -43,8 +43,8 @@ export default class SignupController {
             if (this.checkValidity()) { // this es form
                 try {
                     const data = new FormData(this) // Formulario con los datos
-                    const username = data.get('Usuario')  // Valor del input[name="username"]
-                    const password = data.get('Contraseña')  // Valor del input[name="password"]
+                    const username = data.get('username')  // Valor del input[name="username"]
+                    const password = data.get('password')  // Valor del input[name="password"]
                     const result = await DataService.registerUser(username, password) // Registra nuevo usuario
                     PubSub.publish(PubSub.events.SHOW_SUCCESS, 'Registrado correctamente')
                     window.location.href = './index.html' // Redirige al usuario al Inicio

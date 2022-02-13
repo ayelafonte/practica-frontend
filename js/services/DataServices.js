@@ -1,3 +1,5 @@
+
+
 export default {
 
     // Se conectará al servidor (url), dará una orden (method) y enviará datos (body)
@@ -67,7 +69,7 @@ export default {
     },
 
     getAds: async function () {
-        const url = 'http://localhost:8000/api/ads?_expand=user'
+        const url = 'http://localhost:8000/api/ads?expand=user'
         const response = await fetch(url)
 
         if (response.ok) { // El servidor responde correctamente
@@ -79,12 +81,12 @@ export default {
     },
 
     getAdsDetail: async function(adID){
-        const url = `http://localhost:8000/api/ads/${adID}?_expand=user` // conectar con servidor
+        const url = `http://localhost:8000/api/ads/${adID}?expand=user` // conectar con servidor
         const response = await fetch(url) 
 
         if (response.ok) { // El servidor responde correctamente
             const ad = await response.json() // Me devolverá los datos en JSON
-            return this.parseAd(ad) // Evita que codigo malisioso
+            return this.parseAd(ad) // Evita que codigo malicioso
         } else {
             if (response.status === 404) {
                 return null 

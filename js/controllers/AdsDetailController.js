@@ -1,19 +1,19 @@
-import DataServices from "../services/DataServices.js"
+import DataService from "../services/DataServices.js"
 import PubSub from "../services/PubSub.js"
 import { adDetailView } from "../views.js"
 
-export default class AdDetailController {
+export default class AdsDetailController {
 
     constructor(element, adID) {
         this.element = element 
-        this.loadAd(AdID) // Obtengo los datos del anuncio
+        this.loadAd(adID) // Obtengo los datos del anuncio
     }
 
-    async loadAd(AdID) {
+    async loadAd(adID) {
         PubSub.publish(PubSub.events.SHOW_LOADING) // Muestra el loader
         // Obtener datos del anuncio
         try { 
-            const ad = await DataServices.getAdDetail(adID) // Se pide al servidor los detalles del anuncio
+            const ad = await DataService.getAdsDetail(adID) // Se pide al servidor los detalles del anuncio
             this.element.innerHTML = adDetailView(ad) // Muestra detalles
             // Si el token está autenticado se añade manejador de eventos al boton delete
             this.addDeleteButtonEventListener(ad)

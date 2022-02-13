@@ -23,7 +23,7 @@ export default class AdFormController{
 
                 try {
                     // Conectar con el servidor y pasarle los datos:
-                    const result = await DataServices.createAd(name, type, photo, price, tags);
+                    const result = await DataServices.createAd(name, type, price, photo, tags);
                     // Se ha creado el anuncio con éxito
                     PubSub.publish(PubSub.events.SHOW_SUCCESS, 'Se ha creado el anuncio correctamente')
                 } catch (error) {

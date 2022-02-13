@@ -14,10 +14,6 @@ window.addEventListener('DOMContentLoaded', function() {
     const loaderDiv = document.querySelector('.loader')
     new LoaderController(loaderDiv)
 
-    // Controlador del login
-    const form = document.querySelector('.login')
-    new LoginController(form)
-
     // Se obtiene el ID del anuncio de la URL
     const id = new URLSearchParams(window.location.search).get('id')
     

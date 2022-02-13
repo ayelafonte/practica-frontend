@@ -1,4 +1,4 @@
-import DataService from "../services/DataService.js"
+import DataService from "../services/DataServices.js"
 import PubSub from "../services/PubSub.js"
 
 export default class LoginController {
@@ -16,8 +16,8 @@ export default class LoginController {
             if (this.element.checkValidity()) {
                 // Login
                 const data = new FormData(this.element) // Formulario con los datos
-                const username = data.get('Usuario')  // Valor del input[name="username"]
-                const password = data.get('Contraseña')  // Valor del input[name="password"]
+                const username = data.get('username')  // Valor del input[name="username"]
+                const password = data.get('password')  // Valor del input[name="password"]
                 const url = new URLSearchParams(window.location.search) // url con parámetro 'next' redirige a otra página luego del login
                 const next = url.get('next') || '/'
                 try {
