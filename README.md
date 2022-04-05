@@ -1,14 +1,15 @@
 # Práctica FrontEnd con JavaScript
 
-En NodePop podrás acceder a un listado de anuncios y a su detalle, podrás crear una cuenta y al ingresar como usuario registrado podrás crear anuncios y eliminarlos.
+NodePop es una página de anuncios de compra y venta. En ella podrás acceder a un listado de productos y a su detalle(nombre, foto, precio y tags), además podrás crear una cuenta para crear anuncios y eliminarlos a tu gusto.
 
 El frontEnd consta de las siguientes páginas:
 
-* Página de listado de anuncios: index.html
-* Página de detalle de un anuncio: detail.html
-* Página de creación de anuncios: new.html
-* Página de login: login.html
-* Página de registro: signup.html
+* Página de listado de anuncios: index.html --> Muestra la página de inicio con el listado de anuncios
+* Página de login: login.html --> Inicio de sesión
+* Página de registro: signup.html --> Registro de nuevos usuarios
+* Página de detalle de un anuncio: detail.html --> Detalle de cada anuncio
+* Página de creación de anuncios: new.html --> Creación de nuevos anuncios (solo para usuarios autenticados)
+
 
 ## Instrucciones para comenzar a usar NodePop:
 
@@ -19,6 +20,12 @@ El frontEnd consta de las siguientes páginas:
 5. Arrancar el servidor con ´npm start`
 6. Utilizar los ejemplos de anuncios guardados en `db.json`
 7. En el PORT disponible, acceder a la página principal: http://localhost:PORT/index.html 
+
+# Limitaciones
+
+- La barra de búsqueda no es funcional por lo tanto tampoco es posible filtrar anuncios.
+- No es posible subir imágenes al crear un nuevo anuncio.
+- Algo falla al al intentar ver el detalle de los anuncios, no fui capaz de solucionar eso aún.
 
 
 
